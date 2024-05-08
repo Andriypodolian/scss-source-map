@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:prerender": "ng serve --configuration=prerender,development",
+    "start:prerender": "ng serve --configuration=prerender",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

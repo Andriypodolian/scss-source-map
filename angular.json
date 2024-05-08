@@ -48,7 +48,10 @@
               "server": "src/main.server.ts",
               "ssr": {
                 "entry": "server.ts"
-              }
+              },
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
             },
             "production": {
               "budgets": [
