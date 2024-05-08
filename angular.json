@@ -40,13 +40,16 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "prerender": false
           },
           "configurations": {
+            "prerender": {
+              "prerender": true,
+              "server": "src/main.server.ts",
+              "ssr": {
+                "entry": "server.ts"
+              }
+            },
             "production": {
               "budgets": [
                 {
@@ -78,6 +81,9 @@
             },
             "development": {
               "buildTarget": "scss-source-map:build:development"
+            },
+            "prerender": {
+              "buildTarget": "scss-source-map:build:prerender"
             }
           },
           "defaultConfiguration": "development"
@@ -109,5 +115,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "20c8b4e4-18c1-419a-a4a1-8c61c57c6f68"
   }
 }
